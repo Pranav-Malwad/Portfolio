@@ -14,9 +14,9 @@ const Home = () => {
             I'm a Frontend Developer
           </h2>
           <p className="text-gray-500 py-4 max-w-md">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim modi
-            provident quaerat itaque repellendus! Mollitia suscipit laboriosam
-            non neque quis vero commodi eum.
+            Versatile Frontend Engineer experienced in modern web technologies,
+            committed to staying abreast of industry trends to ensure
+            cutting-edge development.
           </p>
 
           <div>
