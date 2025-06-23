@@ -3,11 +3,11 @@ import html from "../assets/html.png";
 import css from "../assets/css.png";
 import javascript from "../assets/javascript.png";
 import next from "../assets/nextjs.png";
-import node from "../assets/node.png";
+import angular from "../assets/angular.svg";
 import react from "../assets/react.png";
 import tailwind from "../assets/tailwind.png";
 import github from "../assets/github.png";
-import graphql from "../assets/graphql.png";
+import bootstrap from "../assets/bootstrap.svg";
 const Experience = () => {
   const techstack = [
     {
@@ -36,9 +36,21 @@ const Experience = () => {
     },
     {
       id: 5,
+      src: angular,
+      title: "Angular",
+      style: "shadow-red-600",
+    },
+    {
+      id: 6,
       src: tailwind,
       title: "Tailwind Css",
       style: "shadow-sky-400",
+    },
+    {
+      id: 7,
+      src: bootstrap,
+      title: "Bootstrap",
+      style: "shadow-purple-400",
     },
     {
       id: 8,

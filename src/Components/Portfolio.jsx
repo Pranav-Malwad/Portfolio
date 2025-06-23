@@ -1,24 +1,21 @@
 import React from "react";
 import portfolio from "../assets/portfolio/portfolio.png";
-import passwordgenrator from "../assets/portfolio/Randompassgenrator.png";
-import tictactoe from "../assets/portfolio/tictactoe.png";
+import learnify from "../assets/portfolio/learnify.png";
 const Portfolio = () => {
   const portfolios = [
     {
       id: 1,
-      src: passwordgenrator,
+      name: "Portfolio",
+      src: portfolio,
+      demo: "https://pranavmalwad.netlify.app/",
+      code: "https://github.com/Pranav-Malwad/Personal-Portfolio-Website-.git",
     },
     {
       id: 2,
-      src: portfolio,
-    },
-    {
-      id: 3,
-      src: tictactoe,
-    },
-    {
-      id: 4,
-      src: passwordgenrator,
+      name: "Learnify",
+      src: learnify,
+      demo: "https://learnifycom.netlify.app/",
+      code: "https://github.com/Pranav-Malwad/LMS-Frontend-.git",
     },
   ];
 
@@ -35,19 +32,28 @@ const Portfolio = () => {
           <p className="py-6">Check out some of my work right here</p>
         </div>
         <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-12 sm:px-0">
-          {portfolios.map(({ id, src }) => {
+          {portfolios.map(({ id, src, demo, code, name }) => {
             return (
               <div key={id} className="shadow-md shadow-indigo-700 rounded-lg">
+                <p className="p-2 text-center text-lg font-semibold ">
+                  {name}
+                </p>
                 <img
                   src={src}
                   alt=""
                   className="rounded-md duration-200 hover:scale-105"
                 />
                 <div className="flex items-center justify-center">
-                  <button className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105">
+                  <button
+                    className="w-1/2 px-6 m-4 duration-200 hover:scale-105"
+                    onClick={() => window.open(demo)}
+                  >
                     Demo
                   </button>
-                  <button className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105">
+                  <button
+                    className="w-1/2 px-6 m-4 duration-200 hover:scale-105"
+                    onClick={() => window.open(code)}
+                  >
                     Code
                   </button>
                 </div>
